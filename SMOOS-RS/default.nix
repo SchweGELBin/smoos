@@ -8,7 +8,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
   version = "0.1.0";
 
   src = ./rust-server;
-  cargoLock.lockFile = ./Cargo.lock;
+  cargoLock.lockFile = ./rust-server/Cargo.lock;
 
   meta = {
     description = "Super Mario Odyssey: Online Server - Rust";
