@@ -1,7 +1,7 @@
-[submodule "SMOOS-RS/rust-server"]
-	path = SMOOS-RS/rust-server
+[submodule "smoos-rs/rust-server"]
+	path = smoos-rs/rust-server
 	url = https://github.com/speyejack/smo-multi-rs.git
 	branch = json-api
-[submodule "SMOOS-CS/csharp-server"]
-	path = SMOOS-CS/csharp-server
+[submodule "smoos-cs/csharp-server"]
+	path = smoos-cs/csharp-server
 	url = https://github.com/Sanae6/SmoOnlineServer.git
