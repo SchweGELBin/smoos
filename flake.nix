@@ -19,9 +19,9 @@
           pkgs = nixpkgs.legacyPackages.${system};
         in
         {
-          smoos-bot = pkgs.callPackage ./SMOOS-Bot { };
-          smoos-cs = pkgs.callPackage ./SMOOS-CS { };
-          smoos-rs = pkgs.callPackage ./SMOOS-RS { };
+          smoos-bot = pkgs.callPackage ./smoos-bot { };
+          smoos-cs = pkgs.callPackage ./smoos-cs { };
+          smoos-rs = pkgs.callPackage ./smoos-rs { };
         }
       );
     };
