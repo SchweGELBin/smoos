@@ -3,11 +3,9 @@
   rustPlatform,
 }:
 
-# https://github.com/SchweGELBin/nur-packages/blob/main/smoos/smoos-bot.nix
-
 rustPlatform.buildRustPackage (finalAttrs: {
   pname = "smoos-bot";
-  version = "0.1.1";
+  version = "0.1.2";
 
   src = ./.;
   cargoLock.lockFile = ./Cargo.lock;

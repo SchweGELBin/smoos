@@ -3,11 +3,9 @@
   lib,
 }:
 
-# https://github.com/SchweGELBin/nur-packages/blob/main/smoos/smoos-cs.nix
-
 buildDotnetModule (finalAttrs: {
   pname = "smoos-cs";
-  version = "0.1.1";
+  version = "0.1.2";
 
   src = ./csharp-server;
   projectFile = "SmoMultiplayerServer.sln";

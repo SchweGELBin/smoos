@@ -2,12 +2,26 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.2] - 2025-06-02
+
+### 📚 Documentation
+
+- *(readme)* Fill with information
+- *(readme)* Update nur text
+
+### ⚙️ Miscellaneous Tasks
+
+- Use submodules
+- Mark smoos-cs and smoots-rs as broken
+- *(smoos-bot)* Update `Cargo.lock`
+
 ## [0.1.1] - 2025-06-01
 
 ### ⚙️ Miscellaneous Tasks
 
 - *(nix)* Remove fix package path
 - *(nix)* Add deps.json to smoos-cs
+- Bump to 0.1.1
 
 ## [0.1.0] - 2025-06-01
 
