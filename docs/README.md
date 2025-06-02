@@ -5,7 +5,7 @@
 
 - A server for [Super Mario Odyssey: Online](https://github.com/CraftyBoss/SuperMarioOdysseyOnline)
 - View their [website](https://smoo.it)'s [source](https://github.com/Istador/smoo.it)
-- [Setup Guide](https://github.com/SchweGELBin/nur-packages)
+- Available in my [nur repository](https://github.com/SchweGELBin/nur-packages)
 
 
 ## SMOOS-Bot - Discord Bot
