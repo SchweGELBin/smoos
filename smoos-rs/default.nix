@@ -13,6 +13,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
   cargoLock.lockFile = ./rust-server/Cargo.lock;
 
   meta = {
+    broken = true;
     description = "Super Mario Odyssey: Online Server - Rust";
     homepage = "https://github.com/SchweGELBin/smoos";
     changelog = "https://github.com/SchweGELBin/smoos/blob/v${finalAttrs.version}/docs/CHANGELOG.md";

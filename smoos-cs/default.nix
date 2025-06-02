@@ -18,6 +18,7 @@ buildDotnetModule (finalAttrs: {
   '';
 
   meta = {
+    broken = true;
     description = "Super Mario Odyssey: Online Server - C#";
     homepage = "https://github.com/SchweGELBin/smoos";
     changelog = "https://github.com/SchweGELBin/smoos/blob/v${finalAttrs.version}/docs/CHANGELOG.md";
