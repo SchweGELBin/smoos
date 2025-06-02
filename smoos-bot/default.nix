@@ -14,7 +14,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
     description = "Super Mario Odyssey: Online Server - Bot";
     homepage = "https://github.com/SchweGELBin/smoos";
     changelog = "https://github.com/SchweGELBin/smoos/blob/v${finalAttrs.version}/docs/CHANGELOG.md";
-    license = lib.licenses.agpl3Only;
+    license = lib.licenses.mit;
     mainProgram = finalAttrs.pname;
     maintainers = with lib.maintainers; [ SchweGELBin ];
   };
