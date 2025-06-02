@@ -5,7 +5,7 @@
 
 buildDotnetModule (finalAttrs: {
   pname = "smoos-cs";
-  version = "0.1.2";
+  version = "0.1.3";
 
   src = ./csharp-server;
   projectFile = "SmoMultiplayerServer.sln";
