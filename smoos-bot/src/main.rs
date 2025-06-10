@@ -52,7 +52,7 @@ async fn main() {
         },
         command_check: Some(|ctx| {
             Box::pin(async move {
-                let id = var("DISCORD_ID").expect("Missing `DISCORD_ID` env var");
+                let id = var("SMOOS_DISCORD_ID").expect("Missing `SMOOS_DISCORD_ID` env var");
                 if ctx.author().id.to_string() == id {
                     return Ok(true);
                 }
@@ -83,7 +83,7 @@ async fn main() {
         .options(options)
         .build();
 
-    let token = var("DISCORD_TOKEN").expect("Missing `DISCORD_TOKEN` env var");
+    let token = var("SMOOS_DISCORD_TOKEN").expect("Missing `SMOOS_DISCORD_TOKEN` env var");
     let intents =
         serenity::GatewayIntents::non_privileged() | serenity::GatewayIntents::MESSAGE_CONTENT;
 

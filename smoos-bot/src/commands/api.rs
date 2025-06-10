@@ -8,9 +8,9 @@ pub async fn request(
     req_type: String,
     req_data: Option<String>
 ) -> Result<String, Error> {
-    let token: String = var("API_TOKEN").expect("Missing `API_TOKEN` env var");
-    let host: String = var("API_HOST").unwrap_or("localhost".to_string());
-    let port: String = var("API_PORT").unwrap_or("1027".to_string());
+    let host: String = var("SMOOS_API_HOST").unwrap_or("localhost".to_string());
+    let port: String = var("SMOOS_API_PORT").unwrap_or("1027".to_string());
+    let token: String = var("SMOOS_API_TOKEN").expect("Missing `SMOOS_API_TOKEN` env var");
 
     let url = format!("{}:{}", host, port);
     let json = json!({
