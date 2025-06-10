@@ -2,11 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.0] - 2025-06-10
+
+### 🚀 Features
+
+- *(bot)* [**breaking**] Prepend "SMOOS" to Environment Variables
+
 ## [0.1.3] - 2025-06-02
 
 ### ⚙️ Miscellaneous Tasks
 
 - *(license)* Relicense from agpl3 to mit
+- Bump to 0.1.3
 
 ## [0.1.2] - 2025-06-02
 
