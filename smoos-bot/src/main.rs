@@ -31,7 +31,7 @@ async fn main() {
     tracing_subscriber::fmt::init();
 
     let options = poise::FrameworkOptions {
-        commands: vec![commands::help(), commands::command(), commands::permissions(), commands::status()],
+        commands: vec![commands::help(), commands::version(), commands::command(), commands::permissions(), commands::status()],
         prefix_options: poise::PrefixFrameworkOptions {
             prefix: Some("!".into()),
             edit_tracker: Some(Arc::new(poise::EditTracker::for_timespan(
