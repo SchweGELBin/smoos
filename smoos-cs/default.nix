@@ -10,9 +10,12 @@ buildDotnetModule (finalAttrs: {
   src = ./csharp-server;
   projectFile = "SmoMultiplayerServer.sln";
 
+  nugetDeps = ./deps.json;
+
   postUnpack = ''
     sed -i "s/net6.0/net8.0/g" csharp-server/Server/Server.csproj
     sed -i "s/net6.0/net8.0/g" csharp-server/Shared/Shared.csproj
+    sed -i "s/net6.0/net8.0/g" csharp-server/TestClient/TestClient.csproj
   '';
 
   meta = {
