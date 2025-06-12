@@ -22,9 +22,16 @@ pub async fn help(
 }
 
 #[poise::command(prefix_command, slash_command)]
+pub async fn version(ctx: Context<'_>) -> Result<(), Error> {
+    let res = format!("Current Bot Version: {} {}", env!("CARGO_PKG_NAME"), env!("CARGO_PKG_VERSION"));
+    ctx.say(res).await?;
+    Ok(())
+}
+
+#[poise::command(prefix_command, slash_command)]
 pub async fn command(
     ctx: Context<'_>,
-    #[description = "Execute a command"]
+    #[description = "Server command to execute"]
     data: Option<String>,
 ) -> Result<(), Error> {
     let res = api::request("Command".to_string(), data).await?;
@@ -33,23 +40,15 @@ pub async fn command(
 }
 
 #[poise::command(prefix_command, slash_command)]
-pub async fn permissions(
-    ctx: Context<'_>,
-    #[description = "Execute a command"]
-    data: Option<String>,
-) -> Result<(), Error> {
-    let res = api::request("Permissions".to_string(), data).await?;
+pub async fn permissions(ctx: Context<'_>) -> Result<(), Error> {
+    let res = api::request("Permissions".to_string(), None).await?;
     ctx.say(res).await?;
     Ok(())
 }
 
 #[poise::command(prefix_command, slash_command)]
-pub async fn status(
-    ctx: Context<'_>,
-    #[description = "Get the status"]
-    data: Option<String>
-) -> Result<(), Error> {
-    let res = api::request("Status".to_string(), data).await?;
+pub async fn status(ctx: Context<'_>) -> Result<(), Error> {
+    let res = api::request("Status".to_string(), None).await?;
     ctx.say(res).await?;
     Ok(())
 }
