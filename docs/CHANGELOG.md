@@ -2,11 +2,33 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] - 2025-06-12
+
+### 🚀 Features
+
+- *(bot)* Add version option, remove unnecessary parameters
+
+### 📚 Documentation
+
+- *(readme)* Update nur repo link
+- *(readme)* Update nur repo link text
+
+### ⚙️ Miscellaneous Tasks
+
+- *(smoos-cs)* Add deps.json
+- *(smoos-cs)* Fix build
+- *(smoos-cs)* Add settings to final package
+- *(bot)* Update `Cargo.lock`
+
 ## [1.0.0] - 2025-06-10
 
 ### 🚀 Features
 
 - *(bot)* [**breaking**] Prepend "SMOOS" to Environment Variables
+
+### ⚙️ Miscellaneous Tasks
+
+- Bump to 1.0.0
 
 ## [0.1.3] - 2025-06-02
 

@@ -2,7 +2,7 @@
 authors = ["SchweGELBin <schwegelbin@gmail.com>"]
 edition = "2024"
 name = "smoos-bot"
-version = "1.0.0"
+version = "1.1.0"
 
 [dependencies]
 poise = "^0.6"
