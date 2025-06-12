@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.1] - 2025-06-12
+
+### 🐛 Bug Fixes
+
+- *(bot)* Add version command to vector
+
 ## [1.1.0] - 2025-06-12
 
 ### 🚀 Features
@@ -19,6 +25,7 @@ All notable changes to this project will be documented in this file.
 - *(smoos-cs)* Fix build
 - *(smoos-cs)* Add settings to final package
 - *(bot)* Update `Cargo.lock`
+- Bump to 1.1.0
 
 ## [1.0.0] - 2025-06-10
 
