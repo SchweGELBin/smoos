@@ -8,7 +8,7 @@ buildDotnetModule (finalAttrs: {
   version = "1.0.0";
 
   src = ./csharp-server;
-  projectFile = "SmoMultiplayerServer.sln";
+  projectFile = "Server/Server.csproj";
 
   nugetDeps = ./deps.json;
 
@@ -19,7 +19,6 @@ buildDotnetModule (finalAttrs: {
   '';
 
   meta = {
-    broken = true;
     description = "Super Mario Odyssey: Online Server - C#";
     homepage = "https://github.com/SchweGELBin/smoos";
     changelog = "https://github.com/SchweGELBin/smoos/blob/v${finalAttrs.version}/docs/CHANGELOG.md";
