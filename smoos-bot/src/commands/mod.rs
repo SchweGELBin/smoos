@@ -2,6 +2,7 @@ mod api;
 
 use crate::{Context, Error};
 
+// General
 #[poise::command(prefix_command, track_edits, slash_command)]
 pub async fn help(
     ctx: Context<'_>,
@@ -22,12 +23,21 @@ pub async fn help(
 }
 
 #[poise::command(prefix_command, slash_command)]
+pub async fn ping(ctx: Context<'_>) -> Result<(), Error> {
+    let res = "Pong!";
+    ctx.say(res).await?;
+    Ok(())
+}
+
+#[poise::command(prefix_command, slash_command)]
 pub async fn version(ctx: Context<'_>) -> Result<(), Error> {
     let res = format!("Current Bot Version: {} {}", env!("CARGO_PKG_NAME"), env!("CARGO_PKG_VERSION"));
     ctx.say(res).await?;
     Ok(())
 }
 
+
+// API
 #[poise::command(prefix_command, slash_command)]
 pub async fn command(
     ctx: Context<'_>,
