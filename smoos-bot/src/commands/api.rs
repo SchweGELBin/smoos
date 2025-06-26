@@ -28,7 +28,11 @@ pub async fn request(
     stream.read_to_string(&mut response).unwrap();
 
     let response_json: Value = serde_json::from_str(&response).unwrap();
-    let output = to_string_pretty(&response_json).unwrap();
+    let output = if req_type == "Command" {
+        response_json["Output"][0].as_str().unwrap().to_string()
+    } else {
+        to_string_pretty(&response_json).unwrap()
+    };
 
     Ok(output)
 }
