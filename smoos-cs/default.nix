@@ -9,7 +9,7 @@ in
 
 buildDotnetModule (finalAttrs: {
   pname = "smoos-cs";
-  version = "1.1.1";
+  version = "1.2.0";
 
   src = ./csharp-server;
   projectFile = "Server/Server.csproj";
