@@ -33,7 +33,7 @@ async fn main() {
     let options = poise::FrameworkOptions {
         commands: vec![commands::help(), commands::version(), commands::command(), commands::permissions(), commands::status()],
         prefix_options: poise::PrefixFrameworkOptions {
-            prefix: Some("!".into()),
+            prefix: Some(var("SMOOS_DISCORD_PREFIX").unwrap_or("!".to_string())),
             edit_tracker: Some(Arc::new(poise::EditTracker::for_timespan(
                 Duration::from_secs(3600),
             ))),

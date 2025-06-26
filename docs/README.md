@@ -19,6 +19,7 @@ The Bot needs following environment variables to function:
 | SMOOS_API_PORT | Your Server Port | 1027 |
 | SMOOS_API_TOKEN | Your SMOOS JsonApi Token | - |
 | SMOOS_DISCORD_ID | Your Discord User ID | - |
+| SMOOS_DISCORD_PREFIX | Your Discord Bot Command Prefix | ! |
 | SMOOS_DISCORD_TOKEN | Your Discord Bot Token | - |
 
 ## SMOOS-CS - C# Server
