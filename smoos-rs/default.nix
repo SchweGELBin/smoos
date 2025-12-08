@@ -8,10 +8,13 @@ rustPlatform.buildRustPackage (finalAttrs: {
   version = "1.2.0";
 
   src = ./rust-server;
-  cargoLock.lockFile = ./rust-server/Cargo.lock;
+  cargoHash = "sha256-DDkoqbnwPw2UJ2bU79jBY1q2Ic0yLEL+L8J+eRGhuj8=";
+
+  patches = [ ./proc-macro2.patch ];
+
+  doCheck = false;
 
   meta = {
-    broken = true;
     description = "Super Mario Odyssey: Online Server - Rust";
     homepage = "https://github.com/SchweGELBin/smoos";
     changelog = "https://github.com/SchweGELBin/smoos/blob/v${finalAttrs.version}/docs/CHANGELOG.md";
