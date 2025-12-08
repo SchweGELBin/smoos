@@ -3,10 +3,6 @@
   lib,
 }:
 
-let
-  settings = ./settings.json;
-in
-
 buildDotnetModule (finalAttrs: {
   pname = "smoos-cs";
   version = "1.2.0";
@@ -22,7 +18,7 @@ buildDotnetModule (finalAttrs: {
     sed -i "s/net6.0/net8.0/g" csharp-server/TestClient/TestClient.csproj
   '';
 
-  postInstall = "cp ${settings} $out/settings.json";
+  postInstall = "cp ${./settings.json} $out/settings.json";
 
   meta = {
     description = "Super Mario Odyssey: Online Server - C#";
