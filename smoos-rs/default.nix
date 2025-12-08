@@ -8,9 +8,9 @@ rustPlatform.buildRustPackage (finalAttrs: {
   version = "1.3.0";
 
   src = ./rust-server;
-  cargoHash = "sha256-DDkoqbnwPw2UJ2bU79jBY1q2Ic0yLEL+L8J+eRGhuj8=";
+  cargoLock.lockFile = "${finalAttrs.src}/Cargo.lock";
 
-  patches = [ ./proc-macro2.patch ];
+  prePatches = [ ./proc-macro2.patch ];
 
   doCheck = false;
 
