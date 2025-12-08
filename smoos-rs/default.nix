@@ -14,6 +14,8 @@ rustPlatform.buildRustPackage (finalAttrs: {
 
   doCheck = false;
 
+  postInstall = "cp ${./settings.json} $out/settings.json";
+
   meta = {
     description = "Super Mario Odyssey: Online Server - Rust";
     homepage = "https://github.com/SchweGELBin/smoos";
