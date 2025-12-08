@@ -2,7 +2,7 @@
 
 rustPlatform.buildRustPackage (finalAttrs: {
   pname = "smoos-bot";
-  version = "1.3.0";
+  version = "1.3.1";
 
   src = ./.;
   cargoLock.lockFile = ./Cargo.lock;
