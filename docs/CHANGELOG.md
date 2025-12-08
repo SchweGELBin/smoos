@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.0] - 2025-12-08
+
+### 🚀 Features
+
+- *(rs)* Add settings.json to package
+
+### 🐛 Bug Fixes
+
+- *(rs)* Build issues, remove broken
+
+### 🚜 Refactor
+
+- *(cs)* Remove unnecessary let statements
+
+### ⚙️ Miscellaneous Tasks
+
+- *(nix)* Add default.nix
+- *(nix)* Update flake.lock
+- *(bot)* Update Cargo.lock
+
 ## [1.2.0] - 2025-06-26
 
 ### 🚀 Features
@@ -17,6 +37,7 @@ All notable changes to this project will be documented in this file.
 ### ⚙️ Miscellaneous Tasks
 
 - *(bot)* Update `Cargo.lock`
+- Bump to 1.2.0
 
 ## [1.1.1] - 2025-06-12
 
