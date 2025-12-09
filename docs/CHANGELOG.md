@@ -2,11 +2,27 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.3] - 2025-12-09
+
+### 🐛 Bug Fixes
+
+- *(rs)* Remove unavailable options in JsonApi
+- *(rs)* Add back commands permission
+- *(cs)* Remove weird characters
+
+### 🚜 Refactor
+
+- *(rs)* Move JsonApi.Enabled to the top of JsonApi
+
 ## [1.3.2] - 2025-12-09
 
 ### 🐛 Bug Fixes
 
 - *(cs,rs)* Use correct main binary
+
+### ⚙️ Miscellaneous Tasks
+
+- Bump to 1.3.2
 
 ## [1.3.1] - 2025-12-08
 
