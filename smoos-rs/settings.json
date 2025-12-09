@@ -52,6 +52,7 @@
         "Status/Settings/Shines/Enabled"
       ],
       "SECRET_TOKEN_2": [
+        "Commands",
         "Commands/ban",
         "Commands/crash",
         "Commands/dscrestart",
