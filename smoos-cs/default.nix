@@ -25,7 +25,7 @@ buildDotnetModule (finalAttrs: {
     homepage = "https://github.com/SchweGELBin/smoos";
     changelog = "https://github.com/SchweGELBin/smoos/blob/v${finalAttrs.version}/docs/CHANGELOG.md";
     license = lib.licenses.mit;
-    mainProgram = finalAttrs.pname;
+    mainProgram = "Server";
     maintainers = with lib.maintainers; [ SchweGELBin ];
   };
 })
