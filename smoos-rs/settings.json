@@ -35,8 +35,8 @@
     "PortCount": 1
   },
   "JsonApi": {
-    "Port": 1030,
     "Enabled": false,
+    "Port": 1030,
     "Tokens": {
       "SECRET_TOKEN_1": [
         "Status/Players",
