@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.4] - 2025-12-12
+
+### 🚜 Refactor
+
+- *(cs,rs)* Convert settings to nix
+
+### ⚙️ Miscellaneous Tasks
+
+- *(bot)* Update Cargo.lock
+- *(nix)* Update flake.lock
+
 ## [1.3.3] - 2025-12-09
 
 ### 🐛 Bug Fixes
@@ -13,6 +24,10 @@ All notable changes to this project will be documented in this file.
 ### 🚜 Refactor
 
 - *(rs)* Move JsonApi.Enabled to the top of JsonApi
+
+### ⚙️ Miscellaneous Tasks
+
+- Bump to 1.3.3
 
 ## [1.3.2] - 2025-12-09
 
