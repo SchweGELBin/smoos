@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.5] - 2025-12-12
+
+### 🐛 Bug Fixes
+
+- *(cs,rs)* Copy correct file
+
 ## [1.3.4] - 2025-12-12
 
 ### 🚜 Refactor
@@ -12,6 +18,7 @@ All notable changes to this project will be documented in this file.
 
 - *(bot)* Update Cargo.lock
 - *(nix)* Update flake.lock
+- Bump to 1.3.4
 
 ## [1.3.3] - 2025-12-09
 
