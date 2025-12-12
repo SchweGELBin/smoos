@@ -14,7 +14,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
 
   doCheck = false;
 
-  postInstall = "cp ${./settings.json} $out/settings.json";
+  postInstall = "cp ${./settings.nix} $out/settings.nix";
 
   meta = {
     description = "Super Mario Odyssey: Online Server - Rust";

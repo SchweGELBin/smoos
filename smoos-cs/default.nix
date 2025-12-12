@@ -18,7 +18,7 @@ buildDotnetModule (finalAttrs: {
     sed -i "s/net6.0/net8.0/g" csharp-server/TestClient/TestClient.csproj
   '';
 
-  postInstall = "cp ${./settings.json} $out/settings.json";
+  postInstall = "cp ${./settings.nix} $out/settings.nix";
 
   meta = {
     description = "Super Mario Odyssey: Online Server - C#";
