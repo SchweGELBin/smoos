@@ -1,0 +1,96 @@
+{
+  Server = {
+    Address = "0.0.0.0";
+    Port = 1028;
+    MaxPlayers = 8;
+  };
+  Flip = {
+    Enabled = false;
+    Players = [ ];
+    Pov = "Both";
+  };
+  Scenario = {
+    MergeEnabled = false;
+  };
+  BanList = {
+    Enabled = false;
+    Players = [ ];
+    IpAddresses = [ ];
+  };
+  Discord = {
+    Token = null;
+    Prefix = "$";
+    LogChannel = null;
+  };
+  Shines = {
+    Enabled = true;
+  };
+  PersistShines = {
+    Enabled = false;
+    Filename = "./moons.json";
+  };
+  Udp = {
+    InitiateHandshake = false;
+    BasePort = 0;
+    PortCount = 1;
+  };
+  JsonApi = {
+    Enabled = false;
+    Port = 1128;
+    Tokens = {
+      SECRET_TOKEN_1 = [
+        "Status/Players"
+        "Status/Players/Costume"
+        "Status/Players/GameMode"
+        "Status/Players/Kingdom"
+        "Status/Players/Name"
+        "Status/Players/Tagged"
+        "Status/Settings/PersistShines/Enabled"
+        "Status/Settings/Scenario/MergeEnabled"
+        "Status/Settings/Server/MaxPlayers"
+        "Status/Settings/Shines/ClearOnNewSaves"
+        "Status/Settings/Shines/Enabled"
+      ];
+      SECRET_TOKEN_2 = [
+        "Commands"
+        "Commands/ban"
+        "Commands/crash"
+        "Commands/dscrestart"
+        "Commands/exit"
+        "Commands/flip"
+        "Commands/list"
+        "Commands/loadsettings"
+        "Commands/maxplayers"
+        "Commands/q"
+        "Commands/quit"
+        "Commands/rejoin"
+        "Commands/restartserver"
+        "Commands/scenario"
+        "Commands/send"
+        "Commands/sendall"
+        "Commands/shine"
+        "Commands/tag"
+        "Commands/unban"
+        "Status/Players"
+        "Status/Players/Costume"
+        "Status/Players/ID"
+        "Status/Players/IPv4"
+        "Status/Players/Kingdom"
+        "Status/Players/Name"
+        "Status/Players/Position"
+        "Status/Players/Scenario"
+        "Status/Players/Stage"
+        "Status/Players/Tagged"
+        "Status/Settings/BanList/Enabled"
+        "Status/Settings/BanList/Players"
+        "Status/Settings/Flip/Enabled"
+        "Status/Settings/Flip/Players"
+        "Status/Settings/PersistShines/Enabled"
+        "Status/Settings/Scenario/MergeEnabled"
+        "Status/Settings/Server/MaxPlayers"
+        "Status/Settings/Shines/ClearOnNewSaves"
+        "Status/Settings/Shines/Enabled"
+      ];
+    };
+  };
+}
