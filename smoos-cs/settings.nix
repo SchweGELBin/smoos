@@ -27,9 +27,7 @@
   };
   Shines = {
     Enabled = true;
-    Excluded = [
-      496
-    ];
+    Excluded = [ 496 ];
     ClearOnNewSaves = false;
   };
   PersistShines = {
