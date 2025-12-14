@@ -24,7 +24,7 @@ buildDotnetModule (finalAttrs: {
     description = "Super Mario Odyssey: Online Server - C#";
     homepage = "https://github.com/SchweGELBin/smoos";
     changelog = "https://github.com/SchweGELBin/smoos/blob/v${finalAttrs.version}/docs/CHANGELOG.md";
-    license = lib.licenses.mit;
+    license = lib.licenses.free;
     mainProgram = "Server";
     maintainers = with lib.maintainers; [ SchweGELBin ];
   };
