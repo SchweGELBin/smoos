@@ -1,4 +1,5 @@
 {
+  fetchpatch2,
   lib,
   rustPlatform,
 }:
@@ -10,7 +11,12 @@ rustPlatform.buildRustPackage (finalAttrs: {
   src = ./rust-server;
   cargoLock.lockFile = "${finalAttrs.src}/Cargo.lock";
 
-  prePatches = [ ./proc-macro2.patch ];
+  prePatches = [
+    (fetchpatch2 {
+      url = "https://github.com/speyejack/smo-multi-rs/pull/5.patch?full_index=1";
+      hash = "sha256-HojEQy+c6u15GJ8ITh9EaZKTcLz5KBWARPodmeJYUl0=";
+    })
+  ];
 
   doCheck = false;
 
