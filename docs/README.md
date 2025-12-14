@@ -3,8 +3,7 @@
 [![GitHub License](https://img.shields.io/github/license/SchweGELBin/smoos)](../LICENSE)
 [![GitHub Release](https://img.shields.io/github/v/release/SchweGELBin/smoos)](https://github.com/SchweGELBin/smoos/releases/latest)
 
-- A server for [Super Mario Odyssey: Online](https://github.com/CraftyBoss/SuperMarioOdysseyOnline)
-- View their [website](https://smoo.it)'s [source](https://github.com/Istador/smoo.it)
+- A server for [Super Mario Odyssey: Online](https://github.com/CraftyBoss/SuperMarioOdysseyOnline) by @CraftyBoss
 - Available in my [nur expressions](https://github.com/SchweGELBin/nur-expressions) repo
 
 
@@ -22,19 +21,24 @@ The Bot needs following environment variables to function:
 | SMOOS_DISCORD_PREFIX | Your Discord Bot Command Prefix | ! |
 | SMOOS_DISCORD_TOKEN | Your Discord Bot Token | - |
 
+
 ## SMOOS-CS - C# Server
 A wrapper around the [official Online Server](https://github.com/Sanae6/SmoOnlineServer) by @Sanae6
+
+
+## SMOOS-RS - Rust Server
+A wrapper around the [Online Server](https://github.com/speyejack/smo-multi-rs) by @speyejack
+
+
+## Documentation
+Available at the [official website](https://smoo.it) ([source](https://github.com/Istador/smoo.it)) by @Istador
 
 ### Maintenance
 - [Commands](https://smoo.it/#/host/commands) - Includes a list of all stages and shines
 - [Settings](https://smoo.it/#/host/settings)
 - [Servers](https://smoo.it/#/servers)
 
-
-## SMOOS-RS - Rust Server
-A wrapper around the [Online Server](https://github.com/speyejack/smo-multi-rs) by @speyejack
-
-## Useful Links
+### Help & FAQ
 - [Controls](https://smoo.it/#/faq/101)
 - [Connection Help](https://smoo.it/#/faq/102)
 - [Hide and Seek Rules](https://smoo.it/#/play/hide-and-seek)
