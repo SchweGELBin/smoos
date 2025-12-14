@@ -6,7 +6,7 @@
 
 rustPlatform.buildRustPackage (finalAttrs: {
   pname = "smoos-rs";
-  version = "1.3.5";
+  version = "1.4.0";
 
   src = ./rust-server;
   cargoLock.lockFile = "${finalAttrs.src}/Cargo.lock";

@@ -2,11 +2,47 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.4.0] - 2025-12-14
+
+### 🚀 Features
+
+- *(rs)* Merge pull request 5
+
+### 🐛 Bug Fixes
+
+- *(cs)* Use free license instead of mit
+- *(rs)* Update settings.json; use same port, add missing commands
+- *(rs)* Update settings.nix
+
+### 🚜 Refactor
+
+- *(cs)* Use dotnet8.patch instead off `sed -i`
+
+### 📚 Documentation
+
+- *(readme)* Move documentation to specific section
+
+### ⚡ Performance
+
+- *(rs)* Update Cargo.lock
+
+### 🎨 Styling
+
+- *(cs)* Format settings.nix
+
+### ⚙️ Miscellaneous Tasks
+
+- *(nix)* Update flake.lock
+
 ## [1.3.5] - 2025-12-12
 
 ### 🐛 Bug Fixes
 
 - *(cs,rs)* Copy correct file
+
+### ⚙️ Miscellaneous Tasks
+
+- Bump to 1.3.5
 
 ## [1.3.4] - 2025-12-12
 
