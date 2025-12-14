@@ -1,0 +1,39 @@
+diff --git a/Server/Server.csproj b/Server/Server.csproj
+index 5710034..6bebb38 100644
+--- a/Server/Server.csproj
++++ b/Server/Server.csproj
+@@ -2,7 +2,7 @@
+ 
+     <PropertyGroup>
+         <OutputType>Exe</OutputType>
+-        <TargetFramework>net6.0</TargetFramework>
++        <TargetFramework>net8.0</TargetFramework>
+         <ImplicitUsings>enable</ImplicitUsings>
+         <Nullable>enable</Nullable>
+     </PropertyGroup>
+diff --git a/Shared/Shared.csproj b/Shared/Shared.csproj
+index 727c233..7afe1a9 100644
+--- a/Shared/Shared.csproj
++++ b/Shared/Shared.csproj
+@@ -1,7 +1,7 @@
+ <Project Sdk="Microsoft.NET.Sdk">
+ 
+     <PropertyGroup>
+-        <TargetFramework>net6.0</TargetFramework>
++        <TargetFramework>net8.0</TargetFramework>
+         <ImplicitUsings>enable</ImplicitUsings>
+         <Nullable>enable</Nullable>
+         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+diff --git a/TestClient/TestClient.csproj b/TestClient/TestClient.csproj
+index 6510b73..f8e9496 100644
+--- a/TestClient/TestClient.csproj
++++ b/TestClient/TestClient.csproj
+@@ -2,7 +2,7 @@
+ 
+     <PropertyGroup>
+         <OutputType>Exe</OutputType>
+-        <TargetFramework>net6.0</TargetFramework>
++        <TargetFramework>net8.0</TargetFramework>
+         <ImplicitUsings>enable</ImplicitUsings>
+         <Nullable>enable</Nullable>
+         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>

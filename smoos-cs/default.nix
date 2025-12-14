@@ -12,11 +12,7 @@ buildDotnetModule (finalAttrs: {
 
   nugetDeps = ./deps.json;
 
-  postUnpack = ''
-    sed -i "s/net6.0/net8.0/g" csharp-server/Server/Server.csproj
-    sed -i "s/net6.0/net8.0/g" csharp-server/Shared/Shared.csproj
-    sed -i "s/net6.0/net8.0/g" csharp-server/TestClient/TestClient.csproj
-  '';
+  patches = [ ./dotnet8.patch ];
 
   postInstall = "cp ${./settings.nix} $out/settings.nix";
 
