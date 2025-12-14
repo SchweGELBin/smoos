@@ -11,10 +11,13 @@ rustPlatform.buildRustPackage (finalAttrs: {
   src = ./rust-server;
   cargoLock.lockFile = "${finalAttrs.src}/Cargo.lock";
 
-  prePatches = [
+  prePatches = [ ./cargo-update.patch ];
+
+  patches = [
     (fetchpatch2 {
       url = "https://github.com/speyejack/smo-multi-rs/pull/5.patch?full_index=1";
-      hash = "sha256-HojEQy+c6u15GJ8ITh9EaZKTcLz5KBWARPodmeJYUl0=";
+      hash = "sha256-V+s3to7GEURKllaGzVraY3xzwdDf0StrVTae6SICqqM=";
+      excludes = [ "Cargo.lock" ];
     })
   ];
 
