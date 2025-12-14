@@ -36,7 +36,7 @@
   };
   JsonApi = {
     Enabled = false;
-    Port = 1128;
+    Port = 1028;
     Tokens = {
       SECRET_TOKEN_1 = [
         "Status/Players"
@@ -72,12 +72,16 @@
         "Commands/tag"
         "Commands/unban"
         "Status/Players"
+        "Status/Players/Capture"
         "Status/Players/Costume"
+        "Status/Players/GameMode"
         "Status/Players/ID"
         "Status/Players/IPv4"
+        "Status/Players/Is2D"
         "Status/Players/Kingdom"
         "Status/Players/Name"
         "Status/Players/Position"
+        "Status/Players/Rotation"
         "Status/Players/Scenario"
         "Status/Players/Stage"
         "Status/Players/Tagged"
