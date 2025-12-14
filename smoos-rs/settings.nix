@@ -1,7 +1,7 @@
 {
   Server = {
     Address = "0.0.0.0";
-    Port = 1028;
+    Port = 1027;
     MaxPlayers = 8;
   };
   Flip = {
@@ -16,6 +16,8 @@
     Enabled = false;
     Players = [ ];
     IpAddresses = [ ];
+    Stages = [ ];
+    GameModes = [ ];
   };
   Discord = {
     Token = null;
@@ -24,6 +26,8 @@
   };
   Shines = {
     Enabled = true;
+    Excluded = [ 496 ];
+    ClearOnNewSaves = false;
   };
   PersistShines = {
     Enabled = false;
@@ -36,7 +40,7 @@
   };
   JsonApi = {
     Enabled = false;
-    Port = 1028;
+    Port = 1027;
     Tokens = {
       SECRET_TOKEN_1 = [
         "Status/Players"
