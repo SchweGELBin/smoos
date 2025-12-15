@@ -1,0 +1,21 @@
+diff --git a/src/json_api/commands.rs b/src/json_api/commands.rs
+index b51d398..ef098ad 100644
+--- a/src/json_api/commands.rs
++++ b/src/json_api/commands.rs
+@@ -9,7 +9,7 @@ use crate::lobby::{self, LobbyView};
+ #[serde(rename_all = "PascalCase")]
+ pub(in crate::json_api) struct JsonApiCommands {
+     #[serde(skip_serializing_if = "Option::is_none")]
+-    output: Option<String>,
++    output: Option<Vec<String>>,
+ }
+ 
+ impl JsonApiCommands {
+@@ -85,6 +85,6 @@ impl JsonApiCommands {
+     }
+ 
+     pub fn result(str: String) -> JsonApiCommands {
+-        return JsonApiCommands { output: Some(str) };
++        return JsonApiCommands { output: Some(vec![str]) };
+     }
+ }

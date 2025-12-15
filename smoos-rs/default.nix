@@ -14,6 +14,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
   prePatches = [ ./cargo-update.patch ];
 
   patches = [
+    ./jsonapi_output.patch
     (fetchpatch2 {
       url = "https://github.com/speyejack/smo-multi-rs/pull/5.patch?full_index=1";
       hash = "sha256-V+s3to7GEURKllaGzVraY3xzwdDf0StrVTae6SICqqM=";
