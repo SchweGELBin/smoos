@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.4.1] - 2025-12-15
+
+### 🐛 Bug Fixes
+
+- *(rs)* Output list of strings for json_api commands
+
+### ⚙️ Miscellaneous Tasks
+
+- *(bot)* Update Cargo.lock
+- *(bot)* Bump tokio min version
+
 ## [1.4.0] - 2025-12-14
 
 ### 🚀 Features
@@ -33,6 +44,7 @@ All notable changes to this project will be documented in this file.
 ### ⚙️ Miscellaneous Tasks
 
 - *(nix)* Update flake.lock
+- Bump to 1.4.0
 
 ## [1.3.5] - 2025-12-12
 
