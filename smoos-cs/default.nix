@@ -22,6 +22,6 @@ buildDotnetModule (finalAttrs: {
     changelog = "https://github.com/SchweGELBin/smoos/blob/v${finalAttrs.version}/docs/CHANGELOG.md";
     license = lib.licenses.free;
     mainProgram = "Server";
-    maintainers = with lib.maintainers; [ SchweGELBin ];
+    maintainers = [ lib.maintainers.SchweGELBin ];
   };
 })
