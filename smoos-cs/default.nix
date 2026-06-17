@@ -1,6 +1,7 @@
 {
   buildDotnetModule,
   lib,
+  dotnet-sdk_10,
 }:
 
 buildDotnetModule (finalAttrs: {
@@ -10,9 +11,8 @@ buildDotnetModule (finalAttrs: {
   src = ./csharp-server;
   projectFile = "Server/Server.csproj";
 
+  dotnet-sdk = dotnet-sdk_10;
   nugetDeps = ./deps.json;
-
-  patches = [ ./dotnet8.patch ];
 
   postInstall = "cp ${./settings.nix} $out/settings.nix";
 
