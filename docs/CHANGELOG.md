@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.4.2] - 2026-06-17
+
+### 📚 Documentation
+
+- *(license)* Update copyright year
+
+### ⚡ Performance
+
+- *(cs)* Update remote source, use dotnet 10
+
+### 🎨 Styling
+
+- *(bot,cs,rs)* Cleanup default.nix
+
+### ⚙️ Miscellaneous Tasks
+
+- *(nix)* Update flake.lock
+- *(bot)* Update Cargo.lock
+- *(rs)* Update cargo-update.patch
+
 ## [1.4.1] - 2025-12-15
 
 ### 🐛 Bug Fixes
@@ -12,6 +32,7 @@ All notable changes to this project will be documented in this file.
 
 - *(bot)* Update Cargo.lock
 - *(bot)* Bump tokio min version
+- Bump to 1.4.1
 
 ## [1.4.0] - 2025-12-14
 

@@ -6,7 +6,7 @@
 
 buildDotnetModule (finalAttrs: {
   pname = "smoos-cs";
-  version = "1.4.1";
+  version = "1.4.2";
 
   src = ./csharp-server;
   projectFile = "Server/Server.csproj";
